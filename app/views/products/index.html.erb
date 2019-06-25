@@ -17,7 +17,7 @@ $(function () {
           inventoryVar = "<string>Sold Out</stong>";
         }
       let descriptionVar = "<p>" + description + "</p>" + "<p>" + inventoryVar +"</p>";
-      $("#product-" + id).text(descriptionVar);
+      $("#product-" + id).html(descriptionVar);
       })
     });
   });
