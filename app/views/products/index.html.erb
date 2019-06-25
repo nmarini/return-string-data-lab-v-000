@@ -13,7 +13,9 @@ $(function () {
     $.get("/products/" + id + "/description", function(description) {
       $.get("/prodcuts/" + id + "/inventory", function(inventory) {
         let inventoryVar = "<strong>Available</strong>"
-        if (inventory === false)
+        if (inventory === false) {
+          inventoryVar = "<string>Sold Out</stong>";
+        }
         $("product-" + id).prepend(data)
       $("#product-" + id).text(description);
       })
