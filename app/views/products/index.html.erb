@@ -14,7 +14,7 @@ $(function () {
       $.get("/products/" + id + "/inventory", function(inventory) {
         let inventoryVar = "<strong>Available</strong>"
         if (inventory === false) {
-          inventoryVar = "<strong>Sold Out</stong>";
+          inventoryVar = "<strong>Sold Out</strong>";
         }
       let descriptionVar = "<p>" + description + "</p><p>" + inventoryVar +"</p>";
       $("#product-" + id).html(descriptionVar);
