@@ -16,8 +16,8 @@ $(function () {
         if (inventory === false) {
           inventoryVar = "<string>Sold Out</stong>";
         }
-        $("product-" + id).prepend(data)
-      $("#product-" + id).text(description);
+      let descriptionVar = "<p>" + description + "</p>" + "<p>" + inventoryVar +"</p>";
+      $("#product-" + id).text(descriptionVar);
       })
     });
   });
