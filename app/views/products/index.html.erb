@@ -16,7 +16,7 @@ $(function () {
         if (inventory === false) {
           inventoryVar = "<string>Sold Out</stong>";
         }
-      let descriptionVar = "<p>" + description + "</p>" + "<p>" + inventoryVar +"</p>";
+      let descriptionVar = "<p>" + description + "</p><p>" + inventoryVar +"</p>";
       $("#product-" + id).html(descriptionVar);
       })
     });
